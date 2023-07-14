@@ -1,0 +1,179 @@
+<!-- #region head -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nadika - about me ❤</title>
+    <meta
+      name="description"
+      content="This website is about a highly motivated Front-end developer with a passion for modern
+      technology. Responsible and dedicated with proven multitasking and organizational skills. Proficient in operating in fast-paced
+      environments. Tech Stack - HTML | CSS | Javascript | WordPress | React Keep in touch!"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- #endregion head -->
+  <body>
+    <!-- #region header -->
+    <header class="header" id="home">
+      <div class="header_top">
+        <a href="#menu">
+          <img
+            src="images/icons/menu_sm_screen.png"
+            id="icon_menu"
+            alt="Icon burger menu"
+          />
+        </a>
+      </div>
+      <div class="header_bottom">
+        <img src="images/lamp.png" alt="Lamp" />
+        <h1 class="header_title">
+          Let us make<br />
+          the world better
+        </h1>
+      </div>
+    </header>
+    <!-- #endregion header -->
+    <!-- #region menu -->
+    <div class="menu" id="menu">
+      <div class="menu_top">
+        <div>Nadika</div>
+        <a href="#home">
+          <img src="images/icons/cross.png" alt="Cross icon" />
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="menu_items">
+          <li><a href="#home" class="nav_link">Home</a></li>
+          <li><a href="#about_me" class="nav_link">About me</a></li>
+          <li><a href="#projects" class="nav_link">Projects</a></li>
+          <li><a href="#contact" class="nav_link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- #endregion menu -->
+    <main>
+      <!-- #region about_me -->
+      <section class="about_me" id="about_me">
+        <h2 class="about_me_title">About me</h2>
+
+        <div class="about_me">
+          I am a highly motivated Front-end developer with a passion for modern
+          technology. I am responsible and dedicated with proven multitasking
+          and organizational skills. Proficient in operating in fast-paced
+          environments. Experience solving problems creatively and using tact
+          and diplomacy to achieve win-win outcomes. Team player comfortable in
+          competitive, fast-paced environments. Tech Stack - HTML | CSS |
+          Javascript | WordPress | React Keep in touch!
+        </div>
+      </section>
+
+      <!-- #endregion about_me -->
+      <!-- #region projects -->
+
+      <section id="projects" class="projects">
+        <h2 class="projects_title">Projects</h2>
+        <article class="project">
+          <div class="project_photos">
+            <img
+              src="images/projects/random.jpg"
+              class="photo_wide"
+              alt="Random website wide"
+            />
+
+            <img
+              src="images/projects/random_small.jpg"
+              class="photo_square"
+              alt="Random website square"
+            />
+          </div>
+          <h3 class="project_title">Random</h3>
+        </article>
+        <article class="project">
+          <div class="project_photos">
+            <img
+              src="images/projects/run_club.jpg"
+              class="photo_wide"
+              alt="Cyclo-sport website wide"
+            />
+            <img
+              src="images/projects/run_club_small.jpg"
+              class="photo_square"
+              alt="Cyclo-sport website square"
+            />
+          </div>
+          <h3 class="project_title">Cyclo-sport</h3>
+        </article>
+        <article class="project">
+          <div class="project_photos">
+            <img
+              src="images/projects/icpk_small.jpg"
+              class="photo_square"
+              alt="ICPK website square"
+            />
+
+            <img
+              src="images/projects/icpk.png"
+              class="photo_wide"
+              alt="ICPK website wide"
+            />
+          </div>
+          <h3 class="project_title">ICPK</h3>
+        </article>
+      </section>
+      <!-- #endregion projects -->
+      <!-- #region contact -->
+      <section class="contact" id="contact">
+        <h2 class="contact_title">Contact me</h2>
+        <div class="">
+          <div class="container">
+            <form action="action_page.php">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="england">England</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 200px"
+              ></textarea>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion contact -->
+    </main>
+    <footer></footer>
+    <script src="menu.js"></script>
+  </body>
+</html>
