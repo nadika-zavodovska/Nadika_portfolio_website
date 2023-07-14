@@ -32,6 +32,10 @@
           />
         </a>
       </div>
+      <div class="typying_block">
+        <span class="text first-text">I am </span>
+        <span class="text sec-text"></span>
+      </div>
       <div class="header_bottom">
         <img src="images/lamp.png" alt="Lamp" />
         <h1 class="header_title">
@@ -175,5 +179,19 @@
     </main>
     <footer></footer>
     <script src="menu.js"></script>
+    <script>
+      const text = document.querySelector(".sec-text");
+      const textLoad = () => {
+        setTimeout(() => {
+          text.textContent = "Nadika"
+        }, 0);
+        setTimeout(() => {
+          text.textContent = "a Front-End Developer"
+        }, 4000);
+
+      }
+      textLoad();
+      setInterval(textLoad, 8000);
+    </script>
   </body>
 </html>

@@ -1,13 +1,62 @@
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Inter", sans-serif;
   color: #292929;
   margin: 0;
   font-size: 16px;
   line-height: 140%;
+
+  /* text */
+
+
 }
+.typying_block{
+  display: inline-block;
+  padding: 20px;
+  width: 20%;
+  overflow: hidden;
+  background-color: #fff;
+
+}
+.typying_block .text{
+  position: relative;
+  color: #03599b;
+  font-size: 30px;
+  font-weight: 600;
+
+}
+.typying_block .text.first-text{
+  color: #000000;
+
+}
+.text.sec-text:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-left: 2px solid #03599b;
+  animation: animate 4s steps(12) infinite;
+
+}
+
+@keyframes animate{
+  40%, 60%{
+    left: calc(100% + 4px);
+  }
+  100%{
+    left: 0%;
+  }
+}
+
+
+
 /* #region header */
 header {
   display: flex;
@@ -21,6 +70,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .header_title {
   margin-top: 40px;
   margin-bottom: 0;
@@ -30,14 +80,17 @@ header {
   font-style: italic;
   letter-spacing: -1.5px;
 }
+
 .menu_top {
   display: flex;
   justify-content: space-between;
 }
+
 .header_top {
   display: flex;
   justify-content: space-between;
 }
+
 @media (max-width: 640px) {
   .header_title {
     margin: 0;
@@ -45,6 +98,7 @@ header {
     font-size: 34px;
   }
 }
+
 /* #endregion */
 /* #region menu */
 .menu {
@@ -58,17 +112,21 @@ header {
   padding: 64px 72px;
   background-color: #e5e5e5;
 }
+
 .menu:target {
   transform: translateX(0%);
 }
+
 .menu_top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 64px;
 }
+
 .menu_logo {
   margin-bottom: 24px;
 }
+
 /* #endregion menu */
 /* #region nav */
 .menu_items {
@@ -78,6 +136,7 @@ header {
   padding-left: 0;
   margin-top: 0;
 }
+
 .menu_items li {
   font-weight: 700;
   font-size: 22px;
@@ -85,10 +144,12 @@ header {
   text-transform: uppercase;
   list-style-type: none;
 }
+
 .nav_link {
   text-decoration: none;
   color: #292929;
 }
+
 /* #endregion nav */
 /* #region main */
 main {
@@ -101,47 +162,57 @@ main {
     padding: 40px;
   }
 }
+
 /* #endregion main */
 /* #region about_me */
 .about_me {
   margin-bottom: 120px;
 }
+
 .about_me_products {
   display: flex;
   justify-content: center;
   gap: 24px;
 }
+
 @media (max-width: 640px) {
   .about_me_products {
     flex-direction: column;
   }
+
   .about_me {
     margin: 40px;
   }
 }
+
 /* #endregion about_me */
 /* #region product */
 .product {
   flex-basis: 324px;
 }
+
 .product_photo {
   margin-bottom: 20px;
   width: 100%;
 }
+
 .product_title {
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 16px;
   line-height: 140%;
 }
+
 .product_project {
   margin-top: 0;
   margin-bottom: 12px;
 }
+
 .product_price {
   margin: 0;
   font-weight: 800;
 }
+
 /* #endregion product */
 /* #region project */
 .about_me_title,
@@ -154,27 +225,33 @@ main {
   text-align: center;
   letter-spacing: -1.5px;
 }
+
 .projects {
   max-width: 1020px;
   margin: 0 auto;
   margin-bottom: 120px;
 }
+
 .project {
   margin-bottom: 64px;
 }
+
 .project_photos {
   display: flex;
   gap: 3%;
   margin-bottom: 16px;
 }
-.projects_title {
-}
+
+.projects_title {}
+
 .photo_wide {
   width: 65%;
 }
+
 .photo_square {
   width: 32%;
 }
+
 @media (max-width: 640px) {
   .projects {
     margin: 0;
@@ -184,18 +261,21 @@ main {
   .projects_title {
     font-size: 34px;
   }
+
   .project {
     margin-bottom: 34px;
   }
 }
+
 /* #endregion project */
 /* #region How to buy */
-.contact {
+. {
   /* display: flex; */
   gap: 24px;
   max-width: 1020px;
   margin: 0 auto;
 }
+
 .contact_title {
   flex-basis: 50%;
   margin-top: 0;
@@ -206,9 +286,11 @@ main {
   text-align: left;
   letter-spacing: -1.5px;
 }
+
 .contact_content {
   flex-basis: 50%;
 }
+
 .contact_benefits {
   display: flex;
   flex-direction: column;
@@ -219,22 +301,27 @@ main {
   margin-bottom: 40px;
   font-weight: 800;
 }
+
 @media (max-width: 640px) {
   .contact {
     flex-direction: column;
   }
+
   .contact_benefits {
     text-align: center;
   }
+
   .contact_title {
     font-size: 34px;
     text-align: center;
     margin-bottom: 20px;
   }
+
   .contact_description {
     text-align: justify;
   }
 }
+
 /* #endregion How to buy */
 /* #region Footer */
 footer {
@@ -247,18 +334,29 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 /* #endregion Footer */
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
