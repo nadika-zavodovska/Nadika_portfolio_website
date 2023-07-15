@@ -1,4 +1,3 @@
-
 html {
   scroll-behavior: smooth;
 }
@@ -10,7 +9,8 @@ body {
   font-size: 16px;
   line-height: 140%;
 }
-.typying_block{
+
+.typying_block {
   display: inline-block;
   padding: 20px;
   width: 45%;
@@ -18,16 +18,19 @@ body {
   background-color: #fff;
 
 }
-.typying_block .text{
+
+.typying_block .text {
   position: relative;
   color: #03599b;
   font-size: 30px;
   font-weight: 600;
 }
-.typying_block .text.first-text{
+
+.typying_block .text.first-text {
   color: #000000;
 }
-.text.sec-text:before{
+
+.text.sec-text:before {
   content: "";
   position: absolute;
   top: 0;
@@ -39,11 +42,14 @@ body {
   animation: animate 4s steps(12) infinite;
 }
 
-@keyframes animate{
-  40%, 60%{
+@keyframes animate {
+
+  40%,
+  60% {
     left: calc(100% + 4px);
   }
-  100%{
+
+  100% {
     left: 0%;
   }
 }
@@ -141,6 +147,11 @@ header {
   text-decoration: none;
   color: #292929;
 }
+.author_name{
+  font-size: 30px;
+  font-weight: 600;
+
+}
 
 /* #endregion nav */
 /* #region main */
@@ -159,6 +170,12 @@ main {
 /* #region about_me */
 .about_me {
   margin-bottom: 120px;
+  margin: 0 auto;
+  max-width: 90%;
+  text-align: justify;
+  line-height: 40px;
+  font-size: 20px;
+  margin-bottom: 60px;
 }
 
 .about_me_products {
@@ -186,6 +203,11 @@ main {
 .projects_photo {
   margin-bottom: 20px;
   width: 100%;
+}
+.project_title a{
+  text-decoration: none;
+  font-size: 24px;
+
 }
 
 .projects_title {
@@ -261,9 +283,12 @@ main {
 /* #region Contact */
 
 
-.contact{
+.contact {
   text-align: center;
+  font-size: 24px;
+  line-height: 40px;
 }
+
 .contact_title {
   flex-basis: 50%;
   margin-top: 0;
@@ -274,13 +299,19 @@ main {
   text-align: center;
   letter-spacing: -1.5px;
 }
-.contact_email_author, .contact_phone_author {
+
+.contact_email_author,
+.contact_phone_author {
   font-size: 24px;
   line-height: 40px;
 }
 
 .contact_content {
   flex-basis: 50%;
+}
+
+.contact a {
+  text-decoration: none;
 }
 
 .contact_benefits {
@@ -311,6 +342,9 @@ main {
 
   .contact_description {
     text-align: justify;
+  }
+  .about_me{
+    width: 100%;
   }
 }
 
