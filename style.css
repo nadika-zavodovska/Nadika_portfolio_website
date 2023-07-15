@@ -9,15 +9,11 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 140%;
-
-  /* text */
-
-
 }
 .typying_block{
   display: inline-block;
   padding: 20px;
-  width: 20%;
+  width: 45%;
   overflow: hidden;
   background-color: #fff;
 
@@ -27,11 +23,9 @@ body {
   color: #03599b;
   font-size: 30px;
   font-weight: 600;
-
 }
 .typying_block .text.first-text{
   color: #000000;
-
 }
 .text.sec-text:before{
   content: "";
@@ -43,7 +37,6 @@ body {
   background-color: #fff;
   border-left: 2px solid #03599b;
   animation: animate 4s steps(12) infinite;
-
 }
 
 @keyframes animate{
@@ -54,7 +47,6 @@ body {
     left: 0%;
   }
 }
-
 
 
 /* #region header */
@@ -187,23 +179,23 @@ main {
 
 /* #endregion about_me */
 /* #region product */
-.product {
+.projects {
   flex-basis: 324px;
 }
 
-.product_photo {
+.projects_photo {
   margin-bottom: 20px;
   width: 100%;
 }
 
-.product_title {
+.projects_title {
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 16px;
   line-height: 140%;
 }
 
-.product_project {
+.projects_project {
   margin-top: 0;
   margin-bottom: 12px;
 }
@@ -227,7 +219,6 @@ main {
 }
 
 .projects {
-  max-width: 1020px;
   margin: 0 auto;
   margin-bottom: 120px;
 }
@@ -242,7 +233,6 @@ main {
   margin-bottom: 16px;
 }
 
-.projects_title {}
 
 .photo_wide {
   width: 65%;
@@ -268,14 +258,12 @@ main {
 }
 
 /* #endregion project */
-/* #region How to buy */
-. {
-  /* display: flex; */
-  gap: 24px;
-  max-width: 1020px;
-  margin: 0 auto;
-}
+/* #region Contact */
 
+
+.contact{
+  text-align: center;
+}
 .contact_title {
   flex-basis: 50%;
   margin-top: 0;
@@ -283,8 +271,12 @@ main {
   font-size: 48px;
   line-height: 100%;
   font-weight: 700;
-  text-align: left;
+  text-align: center;
   letter-spacing: -1.5px;
+}
+.contact_email_author, .contact_phone_author {
+  font-size: 24px;
+  line-height: 40px;
 }
 
 .contact_content {
